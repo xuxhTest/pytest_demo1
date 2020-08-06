@@ -39,8 +39,12 @@ def test_perimeter(my_rect):
 
 @pytest.mark.parametrize(("length", "width", "expected_diff"), [(30, 20, 10), (20, 20, 0)])
 def test_diff(length, width, expected_diff):
-    sleep(10)
+    sleep(5)
     rect = Rectangle(length, width)
     assert rect.diff() == expected_diff
+
+
+def test_length(my_rect):
+    assert my_rect.length == 30
 
 
