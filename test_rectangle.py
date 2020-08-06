@@ -18,6 +18,7 @@ from time import sleep
 @pytest.fixture()
 def my_rect():
     rect = Rectangle(30, 15)
+    print(rect.length)
     return rect
 
 
