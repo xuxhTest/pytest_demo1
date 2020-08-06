@@ -20,6 +20,7 @@ class Rectangle:
 
     def area(self):
         area = self.length * self.width
+        print(area)
         return area
 
     def perimeter(self):
